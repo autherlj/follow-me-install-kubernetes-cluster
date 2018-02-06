@@ -159,7 +159,7 @@ ExecStart=/root/local/bin/kube-apiserver \\
   --advertise-address=${MASTER_IP} \\
   --bind-address=${MASTER_IP} \\
   --insecure-bind-address=${MASTER_IP} \\
-  --authorization-mode=RBAC \\
+  --authorization-mode=RBAC,Node \\
   --runtime-config=rbac.authorization.k8s.io/v1alpha1 \\
   --kubelet-https=true \\
   --experimental-bootstrap-token-auth \\
